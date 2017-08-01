@@ -2,11 +2,13 @@ var express = require('express');
 var app = express();
 
 app.get('/cheer.txt', function(req, res){
-  res.send("That shirt doesn't look awful on you.");
+  res.send("Have a nice coding.");
 });
 
 app.get('/jeer.txt', function(req, res){
-  res.send("I'm pretty sure your scent is unpleasant.");
+  res.send("Better sell Avon.");
 });
 
-var server = app.listen(8080);
+var server = app.listen(8080, function() {
+    console.log('Listening on port 8080');
+});
