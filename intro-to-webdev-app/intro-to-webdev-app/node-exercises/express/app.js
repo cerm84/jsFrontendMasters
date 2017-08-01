@@ -1,5 +1,5 @@
 var express = require('express');
-var app = express();
+var app = express();//creates an instance of express
 
 app.get('/hello.txt', function(req, res){
   res.send('Hello World');
